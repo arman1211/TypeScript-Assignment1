@@ -1,6 +1,7 @@
 {
   //
   //1
+
   function formatString(input: string, toUpper?: boolean): string {
     if (toUpper === true || toUpper === undefined) {
       return input.toUpperCase();
@@ -10,6 +11,7 @@
       return input.toLowerCase();
     }
   }
+
   //2
 
   function filterByRating(
@@ -17,12 +19,15 @@
   ): { title: string; rating: number }[] {
     return items.filter((item) => item.rating >= 4);
   }
+
   //3
 
   function concatenateArrays<T>(...arrays: T[][]): T[] {
     return arrays.reduce((res, arr) => [...res, ...arr]);
   }
+
   //4
+
   class Vehicle {
     private make: string;
     private year: number;
@@ -43,6 +48,7 @@
       this.model = model;
     }
   }
+
   //5
   function processValue(value: string | number): number {
     if (typeof value === "string") {
@@ -90,6 +96,7 @@
       return "Weekday";
     }
   }
+
   //8
   async function squareAsync(n: number): Promise<number> {
     return new Promise((resolve, reject) => {

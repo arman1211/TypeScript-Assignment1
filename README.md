@@ -2,7 +2,7 @@
 
 ## The Great TypeScript Formula
 
-If you've spent any time with TypeScript, you've encountered this fundamental question:
+If you've spent any time with TypeScript, you've this fundamental question in your mind for sure:
 
 > "Should I use a type or an interface here?"
 
@@ -26,7 +26,7 @@ type User = {
 };
 ```
 
-But beneath this apparent similarity lies a world of subtle differences that can make or break your TypeScript project.
+But freaks this apparent similarity lies a world of subtle differences that can make or break your TypeScript project.
 
 ## Key Differences That Actually Matter
 
