@@ -126,3 +126,7 @@ Use **types** when:
 - You need mapped or conditional types
 - You're working with tuples or complex function types
 - You prefer immutability (since types can't be re-opened)
+
+---
+
+# TypeScript: How does TypeScript help in improving code quality and project maintainability?
