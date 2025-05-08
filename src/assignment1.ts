@@ -1,6 +1,5 @@
 {
   //
-  //1
 
   function formatString(input: string, toUpper?: boolean): string {
     if (toUpper === true || toUpper === undefined) {
@@ -12,21 +11,15 @@
     }
   }
 
-  //2
-
   function filterByRating(
     items: { title: string; rating: number }[]
   ): { title: string; rating: number }[] {
     return items.filter((item) => item.rating >= 4);
   }
 
-  //3
-
   function concatenateArrays<T>(...arrays: T[][]): T[] {
     return arrays.reduce((res, arr) => [...res, ...arr]);
   }
-
-  //4
 
   class Vehicle {
     private make: string;
@@ -38,6 +31,7 @@
       (this.make = make), (this.year = year);
     }
   }
+
   class Car extends Vehicle {
     private model: string;
     getModel() {
@@ -49,7 +43,6 @@
     }
   }
 
-  //5
   function processValue(value: string | number): number {
     if (typeof value === "string") {
       return value.length;
@@ -58,7 +51,6 @@
     }
   }
 
-  //6
   interface Product {
     name: string;
     price: number;
@@ -77,7 +69,6 @@
       return null;
     }
   }
-  //7
 
   enum Day {
     Monday,
@@ -97,7 +88,6 @@
     }
   }
 
-  //8
   async function squareAsync(n: number): Promise<number> {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
