@@ -132,15 +132,15 @@ Use **types** when:
 # How does TypeScript help in improving code quality and project maintainability?
 
 Imagine writing a 100-page novel with no spell check, no grammar suggestions, and no idea if your characters are behaving the way they should. 😰  
-That’s what writing JavaScript can feel like sometimes — powerful, but risky.
+That’s what writing JavaScript can feel like sometimes powerful, but risky.
 
-TypeScript steps in like a friendly editor who watches your back _while_ you write.
+TypeScript steps in like a friendly editor who watches your back while you write.
 
 ---
 
 ### 1. Catch Errors Early (Before They Happen)
 
-TypeScript checks your code _as you type_ — no need to wait until runtime to find out you misspelled `user.email` as `user.emial`.  
+TypeScript checks your code as you type — no need to wait until runtime to find out you misspelled `user.email` as `user.emial`.  
 It’s like having a super-smart linter that actually understands your data.
 
 ```ts
