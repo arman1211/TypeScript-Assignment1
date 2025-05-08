@@ -1,5 +1,6 @@
 {
   //
+  //1
   function formatString(input: string, toUpper?: boolean): string {
     if (toUpper === true || toUpper === undefined) {
       return input.toUpperCase();
@@ -9,31 +10,19 @@
       return input.toLowerCase();
     }
   }
-
-  //   console.log(formatString("Hello"));
-  //   console.log(formatString("Hello", true));
-  //   console.log(formatString("Hello", false));
+  //2
 
   function filterByRating(
     items: { title: string; rating: number }[]
   ): { title: string; rating: number }[] {
     return items.filter((item) => item.rating >= 4);
   }
-
-  //   const books = [
-  //     { title: "Book A", rating: 4.5 },
-  //     { title: "Book B", rating: 3.2 },
-  //     { title: "Book C", rating: 5.0 },
-  //   ];
-
-  //   console.log(filterByRating(books));
+  //3
 
   function concatenateArrays<T>(...arrays: T[][]): T[] {
     return arrays.reduce((res, arr) => [...res, ...arr]);
   }
-  //   console.log(concatenateArrays(["a", "b"], ["c"]));
-  //   console.log(concatenateArrays([1, 2], [3, 4], [5]));
-
+  //4
   class Vehicle {
     private make: string;
     private year: number;
@@ -54,10 +43,7 @@
       this.model = model;
     }
   }
-  // const myCar = new Car("Toyota", 2020, "Corolla");
-  // console.log(myCar.getInfo());
-  // console.log(myCar.getModel());
-
+  //5
   function processValue(value: string | number): number {
     if (typeof value === "string") {
       return value.length;
@@ -65,9 +51,8 @@
       return value * 2;
     }
   }
-  //   console.log(processValue("hello"));
-  //   console.log(processValue(10));
 
+  //6
   interface Product {
     name: string;
     price: number;
@@ -86,13 +71,8 @@
       return null;
     }
   }
-  //   const products = [
-  //     { name: "Pen", price: 10 },
-  //     { name: "Notebook", price: 50 },
-  //     { name: "Bag", price: 50 },
-  //   ];
+  //7
 
-  //   console.log(getMostExpensiveProduct(products));
   enum Day {
     Monday,
     Tuesday,
@@ -110,9 +90,7 @@
       return "Weekday";
     }
   }
-  //   console.log(getDayType(Day.Monday));
-  //   console.log(getDayType(Day.Sunday));
-
+  //8
   async function squareAsync(n: number): Promise<number> {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -124,8 +102,6 @@
       }, 1000);
     });
   }
-  // squareAsync(4).then(console.log);
-  // squareAsync(-4).catch(console.error);
 
   //
 }
