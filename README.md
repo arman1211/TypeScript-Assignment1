@@ -56,7 +56,7 @@ type Dog = Animal & {
 
 In the type world, we're saying, "a Dog is an Animal AND it has these additional properties." This subtle difference matters when your types get complex.
 
-> হাতি আর ঘোড়া একই জায়গায় রাখার চেষ্টা করছেন? (Trying to keep an elephant and a horse in the same place?)
+> হাতি আর ঘোড়া একই জায়গায় রাখার চেষ্টা করছেন?
 > Interface বলে: "আমি ঘোড়া, কিন্তু হাতির বৈশিষ্ট্যও নিতে পারি।"  
 > Type বলে: "আমি ঘোড়া এবং হাতি, একই সাথে!"
 
@@ -126,33 +126,3 @@ Use **types** when:
 - You need mapped or conditional types
 - You're working with tuples or complex function types
 - You prefer immutability (since types can't be re-opened)
-
-## Real-World Example: React Components
-
-For React developers, the choice matters:
-
-The type approach makes it easier to combine your props with React's built-in types using intersection.
-
-> আমার দাদী বলতেন, "ভাত রান্না করার আগে চাল ভালো করে ধুয়ে নাও।"
-> একইভাবে, কোড লেখার আগে type নাকি interface ব্যবহার করবেন ঠিক করে নিন!
-
-## The TypeScript Team's Perspective
-
-The TypeScript team themselves have evolved in their recommendations:
-
-> "For the most part you can choose based on personal preference, and TypeScript will tell you if it needs something to be the other kind of declaration. If you would like a heuristic, use interface until you need to use features from type." - TypeScript Handbook
-
-## Conclusion: The Pragmatic Approach
-
-After years of TypeScript development, most seasoned developers adopt this approach:
-
-1. Start with interfaces for object shapes by default
-2. Switch to types when you need their specific capabilities
-3. Be consistent within a project
-4. Document your team's choices
-
-Remember that in the end, both are just tools to help you write safer, more maintainable code. The real TypeScript mastery comes not from dogmatically choosing one over the other, but from understanding when each one shines.
-
-Like we say in Bangla: "ধীরে চলো, দূর যাও". Take the time to understand these nuances, and your TypeScript journey will be smoother for it.
-
----
